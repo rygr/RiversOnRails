@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+RiverName.delete_all
+
+RiverName.create(:name => 'Ausable River')
+RiverName.create(:name => 'Cass River')
+RiverName.create(:name => 'Flint River')
+RiverName.create(:name => 'Rifle River')
