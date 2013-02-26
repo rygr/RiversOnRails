@@ -1,0 +1,1 @@
+This repository contains a rails program for a guide to michigan rivers.  Hopefully this will help kayakers and canoers in trip planning on Michigan's beautiful rivers.  
