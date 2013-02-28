@@ -1,0 +1,3 @@
+%ul
+  - @rivers.each do |river|
+    %li= link_to river.name, action: "view", id: river

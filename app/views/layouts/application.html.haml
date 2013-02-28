@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Rivers On Rails
+    = stylesheet_link_tag "application", :media => "all"
+    = csrf_meta_tags
+  %body
+    %h1 Rivers On Rails
+
+    = yield
+
+    = javascript_include_tag "application"
