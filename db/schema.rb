@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130228012851) do
+ActiveRecord::Schema.define(:version => 20130303165938) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -50,6 +50,9 @@ ActiveRecord::Schema.define(:version => 20130228012851) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "slug"
   end
+
+  add_index "rivers", ["slug"], :name => "index_rivers_on_slug"
 
 end
