@@ -1,0 +1,6 @@
+<h1><strong>Michigan Rivers</strong></h1>
+<% @rivers.each do |river| %>
+  <li>
+  <%= link_to river.name, controller: "river", action: "index", id: river.id %>
+  </li>
+<% end %>

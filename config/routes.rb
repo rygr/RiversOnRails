@@ -4,5 +4,7 @@ RiversOnRails::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root to: "home#index"
-  match ":id" => "home#view"
+
+  root to: "river#index"
+  match ":id" => "river#index"
 end
